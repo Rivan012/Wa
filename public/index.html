@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Bot Panel</title>
+</head>
+<body>
+  <h1>Bot WhatsApp Lenwy</h1>
+  <button onclick="startBot()">Jalankan Bot</button>
+  <p id="status"></p>
+
+  <script>
+    async function startBot() {
+      try {
+        const res = await fetch("/api/start-bot");
+        const text = await res.text();
+        document.getElementById("status").textContent = text;
+      } catch (err) {
+        document.getElementById("status").textContent = "Gagal memulai bot.";
+      }
+    }
+  </script>
+</body>
+</html>

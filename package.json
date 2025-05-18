@@ -1,43 +1,28 @@
 {
-  "name": "@adiwajshing/whatsapp-info-bot",
-  "version": "2.0.0",
-  "description": "A framework to make bots",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "whatsappinfobot",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "prepare": "tsc",
-    "test:chat": "ts-node src/example/intents --chat",
-    "example": "ts-node src/example/index.ts",
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "files": [
-    "dist/*"
-  ],
-  "keywords": [],
   "repository": {
-    "url": "git@github.com:adiwajshing/WhatsAppInfoBot.git"
+    "type": "git",
+    "url": "git+https://github.com/adiwajshing/WhatsAppInfoBot.git"
   },
-  "author": "Adhiraj Singh",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adiwajshing/WhatsAppInfoBot/issues"
+  },
+  "homepage": "https://github.com/adiwajshing/WhatsAppInfoBot#readme",
+  "description": "",
   "dependencies": {
-    "got": "^11.8.1",
-    "he": "^1.2.0",
-    "mustache": "^4.1.0",
-    "natural": "^2.1.5"
-  },
-  "peerDependencies": {
-    "@adiwajshing/baileys": "^3.4.0",
-    "@chatdaddy/client": "git+https://github.com/chatdaddy/typescript-client"
-  },
-  "devDependencies": {
-    "@adiwajshing/baileys": "^3.4.0",
-    "@chatdaddy/client": "git+https://github.com/chatdaddy/typescript-client",
-    "@types/aws-lambda": "^8.10.82",
-    "@types/he": "^1.1.1",
-    "@types/mustache": "^4.1.1",
-    "@types/natural": "^2.1.1",
-    "@types/node": "^14.14.31",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.5"
+    "@whiskeysockets/baileys": "^6.7.17",
+    "axios": "^1.9.0",
+    "chalk": "^4.1.2",
+    "express": "^5.1.0",
+    "pino": "^9.6.0"
   }
 }

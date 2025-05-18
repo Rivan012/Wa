@@ -1,7 +1,0 @@
-{
-    "keywords": ["hi", "hello", "yo", "wassup", "messcat", "aye", "mate"],
-    "entities": {},
-    "answer": "Hello! Type 'help' to know what all I can do",
-    "meta": {},
-    "isGreeting": true
-}
